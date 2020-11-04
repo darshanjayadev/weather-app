@@ -16,8 +16,6 @@ class DisplayWeather extends React.Component {
     return (
     <section className="DisplayWeather">
       <article className="daily-weather">
-        {console.log(this.props.weatherData)}
-        {console.log(this.days[new Date().getDay()])}
         {
           this.props.weatherData.daily.map((dayData) => {
             if(this.today > 6) {

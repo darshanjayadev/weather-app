@@ -42,7 +42,7 @@ class CitySearch extends React.Component {
         <form className="city-form" onSubmit={this.handleSubmit}>
           <input type="text" value={this.state.cityInput} onChange={this.handleCityInputChange} placeholder="Enter a city name" />
           {
-            this.state.isSelectVisible && !this.state.cityInput == "" &&
+            this.state.isSelectVisible &&
             <select value={this.state.selectedCity} onChange={this.handleCitySelect} multiple>
               {
                 filteredList.slice(0,5).map((city) => (
