@@ -1,0 +1,37 @@
+.CitySearch {
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.city-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.city-form input {
+  margin: 10px;
+  margin-bottom: 0;
+  padding: 15px 10px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.city-form select {
+  margin: 10px;
+  margin-top: 1px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+  border-radius: 10px;
+}
+
+.city-form option {
+  padding: 10px;
+  border-bottom: 1px solid grey;
+}

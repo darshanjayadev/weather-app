@@ -1,0 +1,16 @@
+.DisplayWeather {
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.daily-weather {
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+}
+
+.day-detail {
+  padding: 20px;
+}

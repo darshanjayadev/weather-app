@@ -1,5 +1,6 @@
 import React from 'react';
 import cityList from 'indian-cities-json';
+import './CitySearch.css';
 
 class CitySearch extends React.Component {
   constructor(props) {
@@ -38,7 +39,7 @@ class CitySearch extends React.Component {
     });
     return (
       <article className="CitySearch">
-        <form onSubmit={this.handleSubmit}>
+        <form className="city-form" onSubmit={this.handleSubmit}>
           <input type="text" value={this.state.cityInput} onChange={this.handleCityInputChange} placeholder="Enter a city name" />
           {
             this.state.isSelectVisible && !this.state.cityInput == "" &&

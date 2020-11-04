@@ -1,4 +1,5 @@
 import React from 'react';
+import './DisplayWeather.css'
 
 class DisplayWeather extends React.Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class DisplayWeather extends React.Component {
               this.today = 0;
             }
             return (
-              <div key={dayData.dt}>
+              <div className="day-detail" key={dayData.dt}>
                 <div className="day">
                   {this.days[this.today++]}
                 </div>
