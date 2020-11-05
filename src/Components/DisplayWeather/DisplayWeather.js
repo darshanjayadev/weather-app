@@ -31,7 +31,7 @@ class DisplayWeather extends React.Component {
                   <div className="max">{Math.floor(this.convertToCelsius(dayData.temp.max))}°</div>
                 </div>
                 <div className="logo">
-                  <img src={`http://openweathermap.org/img/wn/${dayData.weather[0].icon}@2x.png`} />
+                  <img src={`http://openweathermap.org/img/wn/${dayData.weather[0].icon}@2x.png`} alt="daily weather icon"/>
                 </div>
                 <div className="type">{dayData.weather[0].main}</div>
               </div>
@@ -39,8 +39,12 @@ class DisplayWeather extends React.Component {
           })
         }
       </article>
+      <section className="current-container">
       <article className="current">
-        {Math.floor(this.props.weatherData.current.temp - 273)}
+        <div>
+          {Math.floor(this.props.weatherData.current.temp - 273)}°C
+        </div>
+        <img src={`http://openweathermap.org/img/wn/${this.props.weatherData.current.weather[0].icon}@2x.png`} alt="current weather icon"/>
       </article>
       <article className="weather">
         <div className="pressure">
@@ -54,6 +58,7 @@ class DisplayWeather extends React.Component {
           %
         </div>
       </article>
+      </section>
     </section>
     )
   }

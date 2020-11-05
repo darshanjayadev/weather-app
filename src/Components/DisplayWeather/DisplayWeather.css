@@ -34,3 +34,37 @@
   display: flex;
   justify-content: space-around;
 }
+
+.current-container {
+  border: none;
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.current {
+  display: flex;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.weather {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.weather > * {
+  width: 48%;
+  margin: 0.5%;
+  background-color: #f3fbff;
+  padding: 1em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather span {
+  font-weight: bold;
+}
