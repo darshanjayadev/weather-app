@@ -1,3 +1,9 @@
 .App {
   text-align: center;
 }
+
+.loading {
+  font-size: 24px;
+  font-weight: lighter;
+  margin: 5em;
+}

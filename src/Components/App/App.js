@@ -53,7 +53,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <CitySearch onSelect={this.handleLocationChange}/>
-        {this.state.location !== '' && (!this.state.isLoaded ?<div>Loading</div> : <DisplayWeather weatherData={this.state.weatherData}/> )}
+        {this.state.location !== '' && (!this.state.isLoaded ?<div className="loading">Loading</div> : <DisplayWeather weatherData={this.state.weatherData}/> )}
       </div>
     )
   }

@@ -2,15 +2,35 @@
   width: 100%;
   max-width: 600px;
   min-width: 300px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .daily-weather {
   width: 100%;
   display: flex;
-  overflow: scroll;
+  overflow-x: scroll;
+  font-weight: bold;
+}
+
+.temp .max {
+  color: #877E8C;
+}
+
+.daily-weather .type {
+  color: #877E8C;
+  font-size: 0.9em;
+}
+
+.daily-weather .icon {
+  width: 100%;
+  height: auto;
 }
 
 .day-detail {
   padding: 20px;
+}
+
+.temp {
+  display: flex;
+  justify-content: space-around;
 }

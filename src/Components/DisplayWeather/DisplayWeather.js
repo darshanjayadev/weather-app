@@ -27,10 +27,12 @@ class DisplayWeather extends React.Component {
                   {this.days[this.today++]}
                 </div>
                 <div className="temp">
-                  <div className="min">{Math.floor(this.convertToCelsius(dayData.temp.min))}</div>
-                  <div className="max">{Math.floor(this.convertToCelsius(dayData.temp.max))}</div>
+                  <div className="min">{Math.floor(this.convertToCelsius(dayData.temp.min))}°</div>
+                  <div className="max">{Math.floor(this.convertToCelsius(dayData.temp.max))}°</div>
                 </div>
-                <div className="logo"></div>
+                <div className="logo">
+                  <img src={`http://openweathermap.org/img/wn/${dayData.weather[0].icon}@2x.png`} />
+                </div>
                 <div className="type">{dayData.weather[0].main}</div>
               </div>
             )
